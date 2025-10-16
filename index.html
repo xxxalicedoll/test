@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>スタバブログ | 季節の新作・カスタマイズ・レビュー</title>
+    <meta name="description" content="スターバックス好きの個人ブログ。季節の新作レビュー、カスタマイズ、店舗体験などを発信します。非公式ファンサイトです。" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">☕</div>
+        <a href="#/" class="brand-title">スタバブログ</a>
+      </div>
+      <nav class="site-actions">
+        <input id="search" class="search" type="search" placeholder="キーワードで検索 (例: いちご, カスタム)" aria-label="検索" />
+        <button id="clearSearch" class="ghost" title="検索をクリア">クリア</button>
+      </nav>
+    </header>
+
+    <main id="app" class="container" aria-live="polite">
+      <!-- JSで一覧/記事を描画 -->
+      <noscript>このブログを表示するにはJavaScriptを有効にしてください。</noscript>
+    </main>
+
+    <footer class="site-footer">
+      <small>
+        本サイトはスターバックス コーヒー ジャパンとは関係のない個人のファンサイトです。<br />
+        Starbucks およびロゴは各社の商標です。
+      </small>
+    </footer>
+
+    <!-- file:// 直開き対応のためのインライン記事データ（HTTP配信時は posts/posts.json をfetch） -->
+    <script type="application/json" id="posts-data">[
+  {
+    "slug": "2025-spring-strawberry-cream-frappuccino",
+    "title": "2025春 限定 いちご クリーム フラペチーノ徹底レビュー",
+    "date": "2025-03-15",
+    "tags": ["季節の新作", "フラペチーノ", "レビュー"],
+    "excerpt": "果肉感しっかり、甘さ控えめの春フラペ。おすすめカスタマイズも紹介。",
+    "heroImage": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 675'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0%25' stop-color='%2300704A'/%3E%3Cstop offset='100%25' stop-color='%230a8f69'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='675' fill='url(%23g)'/%3E%3Ccircle cx='220' cy='180' r='120' fill='white' fill-opacity='.15'/%3E%3Ctext x='60' y='120' font-family='Segoe UI, Roboto, sans-serif' font-size='56' font-weight='800' fill='white'%3ESTRAWBERRY%3C/text%3E%3Ctext x='60' y='185' font-family='Segoe UI, Roboto, sans-serif' font-size='28' font-weight='600' fill='white'%3ESeasonal Review%3C/text%3E%3C/svg%3E",
+    "content": "<p>ひと口目から<strong>ストロベリーの果肉感</strong>がしっかり。甘さは控えめで、ミルクとのバランスが絶妙でした。ベースに少し酸味があるので後味はすっきり。</p><p>今回は <em>ライトシロップ</em> にして、<em>ホイップ多め</em> + <em>チョコソース</em> を追加。ベリー × チョコの王道で満足感アップ。</p><h3>おすすめカスタマイズ</h3><ul><li>シロップ少なめ（甘さ調整）</li><li>チョコソース追加（無料）</li><li>シトラス果肉追加（＋有料）で爽やかに</li></ul><p>リピート度：★★★★☆（4.5/5）</p>"
+  },
+  {
+    "slug": "customization-best-5",
+    "title": "通が選ぶ！スタバの神カスタマイズ5選",
+    "date": "2025-02-02",
+    "tags": ["カスタマイズ", "まとめ", "保存版"],
+    "excerpt": "定番ビバレッジをちょい足しでさらに美味しく。初心者にも◎",
+    "heroImage": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 675'%3E%3Crect width='1200' height='675' fill='%2300704A'/%3E%3Ctext x='60' y='120' font-family='Segoe UI, Roboto, sans-serif' font-size='56' font-weight='800' fill='white'%3ECUSTOMIZE%3C/text%3E%3Ctext x='60' y='185' font-family='Segoe UI, Roboto, sans-serif' font-size='28' font-weight='600' fill='white'%3EBest 5%3C/text%3E%3C/svg%3E",
+    "content": "<p>カスタマイズは奥が深い！まずは<strong>無料追加/変更</strong>からチャレンジ。</p><ol><li>キャラメル マキアート × シロップ多め</li><li>抹茶 ラテ × パウダー多め（濃いめ）</li><li>ドリップ コーヒー × エクストラショット</li><li>カフェ ミスト × ハチミツ追加</li><li>ティー ラテ × オールミルク</li></ol><p>店員さんに「甘さ控えめで」「濃いめで」など口頭相談すると、より好みに近づけやすいです。</p>"
+  },
+  {
+    "slug": "study-at-starbucks-tips",
+    "title": "スタバで集中するコツ｜席選びと時間帯、持ち物",
+    "date": "2025-01-12",
+    "tags": ["コツ", "ライフハック", "店舗体験"],
+    "excerpt": "混雑を避けて快適に。電源席や静かな場所の見つけ方。",
+    "heroImage": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 675'%3E%3Crect width='1200' height='675' fill='%2300704A'/%3E%3Ctext x='60' y='120' font-family='Segoe UI, Roboto, sans-serif' font-size='56' font-weight='800' fill='white'%3ESTUDY TIPS%3C/text%3E%3Ctext x='60' y='185' font-family='Segoe UI, Roboto, sans-serif' font-size='28' font-weight='600' fill='white'%3EProductivity%3C/text%3E%3C/svg%3E",
+    "content": "<p>狙い目は<strong>開店直後〜午前中</strong>。混雑ピーク（昼過ぎ〜夕方）を避けるだけで快適度が段違いです。</p><ul><li>席：柱や壁際など人通りの少ない場所</li><li>音：ノイズキャンセリング or 自然音BGM</li><li>持ち物：PC充電器、軽い羽織り、目薬</li></ul><p>長時間利用は様子を見つつ、ドリンクのおかわり（One More Coffee）も活用しましょう。</p>"
+  },
+  {
+    "slug": "acai-berry-frappuccino-2025-fall",
+    "title": "アサイー ベリー フラペチーノ徹底レビュー｜酸味とすっきり感が魅力",
+    "date": "2025-10-16",
+    "tags": ["季節の新作", "フラペチーノ", "アサイー", "レビュー"],
+    "excerpt": "ベリーの爽やかな酸味とアサイーのコク。重たくないのに満足度高めな一杯。おすすめカスタマイズやフードペアリングも紹介。",
+    "heroImage": "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 675'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0%25' stop-color='%23421C52'/%3E%3Cstop offset='100%25' stop-color='%236B1E5B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='675' fill='url(%23g)'/%3E%3Ccircle cx='1020' cy='120' r='120' fill='white' fill-opacity='.1'/%3E%3Ccircle cx='180' cy='520' r='160' fill='white' fill-opacity='.08'/%3E%3Ctext x='60' y='120' font-family='Segoe UI, Roboto, sans-serif' font-size='56' font-weight='800' fill='white'%3EACAI BERRY%3C/text%3E%3Ctext x='60' y='185' font-family='Segoe UI, Roboto, sans-serif' font-size='28' font-weight='600' fill='white'%3EFrappuccino Review%3C/text%3E%3C/svg%3E",
+    "content": "<p><strong>ベリーの甘酸っぱさ</strong>と、アサイー特有のほのかなコクが心地よく重なる、すっきり系のフラペチーノ。ベース自体は軽やかで後味が長く残りにくく、<em>甘さ控えめ派</em>にもおすすめです。</p><h3>味の印象</h3><ul><li>第一印象はラズベリー〜ブルーベリー系の鮮やかな酸味。鼻に抜ける香りがフルーティ。</li><li>アサイー由来のコクが後半にふんわり。ミルキーになりすぎず、軽やかな満足感。</li><li>氷のキレが良く、ジューシーでリフレッシュ感が高い。</li></ul><h3>おすすめカスタマイズ</h3><ul><li><strong>ホイップ多め</strong>：酸味をまろやかにしてデザート感UP。</li><li><strong>シトラス果肉追加</strong>（有料）：果実感をさらにブースト。ジューシーさが倍増。</li><li><strong>チョコソース</strong>：ベリー×チョコの鉄板。コクと香りの奥行きが出ます。</li><li><strong>ライトシロップ</strong>：甘さ控えめに整えてごくごく飲める仕上がり。</li><li><strong>ノンファットミルク or アーモンドミルク</strong>：軽さ重視なら相性◎、香ばしさがほのかに追加。</li></ul><h3>相性の良いフード</h3><ul><li>ニューヨークチーズケーキ：酸味同士で喧嘩せず、コクの橋渡しに。</li><li>チョコチャンクスコーン：ビター×ベリーの王道コンビ。満足感が欲しいときに。</li><li>ハム＆マリボーチーズ 石窯フィローネ：食事系と合わせるとドリンクの軽やかさが生きます。</li></ul><h3>甘さ・氷のバランス</h3><p>デフォルトでバランス良好。暑い日は<em>氷多め</em>でキレを強調、肌寒い日は<em>ホイップ多め＋シロップ控えめ</em>で円やかさ重視が◎。</p><h3>こんな人におすすめ</h3><ul><li>さっぱり飲みたいけど、味わいの厚みも欲しい人</li><li>ベリー系の爽やかな酸味が好きな人</li><li>ミルキーすぎるフラペは重いと感じる人</li></ul><h3>まとめ</h3><p>フレッシュなベリー感とアサイーの穏やかなコクで、<strong>軽やかさと満足感のバランス</strong>が秀逸。季節の間にぜひ一度、<em>ホイップ多め＋チョコソース</em>で“ご褒美仕様”も試してみてください。</p><p class=\"meta\">※本記事は個人の感想であり、公式情報ではありません。原材料・提供状況は店舗や時期により異なる場合があります。</p>"
+  }
+]</script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
